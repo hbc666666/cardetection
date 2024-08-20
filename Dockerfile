@@ -19,7 +19,7 @@ WORKDIR /workspace
 
 # 复制模型、脚本和其他文件到容器中
 COPY run.py /workspace/run.py
-COPY best.pt /workspace/model_path/best.pt  # 替换为实际的模型文件路径
+COPY best.pt /workspace/best.pt  # 替换为实际的模型文件路径
 
 # 安装 Python 依赖
 RUN pip3 install --upgrade pip
