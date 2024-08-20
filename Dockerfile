@@ -23,7 +23,9 @@ COPY . /workspace
 #COPY best.pt /workspace/best.pt  # 替换为实际的模型文件路径
 
 # 安装 Python 依赖
-RUN pip3 install --upgrade pip
+#RUN pip3 install --upgrade pip
+RUN pip install -U pip
+RUN pip config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
 #RUN pip3 install ultralytics opencv-python-headless lxml
 #RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
 RUN pip3 install -r requirements.txt
