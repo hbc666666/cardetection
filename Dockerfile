@@ -25,7 +25,7 @@ COPY . /workspace
 # 安装 Python 依赖
 RUN pip3 install --upgrade pip
 #RUN pip3 install ultralytics opencv-python-headless lxml
-RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
+#RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
 RUN pip3 install -r requirements.txt
 
 # 定义容器启动时的默认命令
