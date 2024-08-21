@@ -1,6 +1,7 @@
 # 基础镜像：选择适合的基础镜像
 FROM nvidia/cuda:11.7.1-cudnn8-runtime-ubuntu18.04
-
+RUN mkdir -p /etc/docker && \
+    echo '{ "registry-mirrors": ["https://s7qi13sr.mirror.aliyuncs.com"] }' > /etc/docker/daemon.json
 # 设置维护者信息
 LABEL maintainer="Your Name <your.email@example.com>"
 
