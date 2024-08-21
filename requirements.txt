@@ -1,5 +1,5 @@
 torch==1.10.0
-torchaudio==1.10.0
+torchaudio==0.10.0
 torchvision==0.10.0
 pillow==8.4.0
 timm==1.0.7
