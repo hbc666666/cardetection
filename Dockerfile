@@ -26,7 +26,6 @@ COPY . /workspace
 #RUN pip3 install --upgrade pip
 RUN pip3 install -U pip
 RUN pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
-#RUN pip3 install ultralytics opencv-python-headless lxml
 #RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
 RUN pip3 install -r requirements.txt
 
