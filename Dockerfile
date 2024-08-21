@@ -26,7 +26,7 @@ COPY . /workspace
 #RUN pip3 install --upgrade pip
 RUN pip3 install -U pip
 RUN pip3 config set global.index-url https://pypi.tuna.tsinghua.edu.cn/simple
-RUN pip3 install --default-timeout=1000 -i https://pypi.tuna.tsinghua.edu.cn/simple opencv-python-headless==4.10
+RUN pip3 install --default-timeout=1000 -i https://pypi.tuna.tsinghua.edu.cn/simple opencv-python-headless==4.10.0.84
 #RUN pip3 install torch torchvision torchaudio --index-url https://download.pytorch.org/whl/cu117
 RUN --mount=type=cache,target=/root/.cache/pip pip3 install -r requirements.txt
 
