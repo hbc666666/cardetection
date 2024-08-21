@@ -1,5 +1,5 @@
 # 基础镜像：选择适合的基础镜像
-FROM nvidia/cuda:11.7.1-base-ubuntu18.04
+FROM nvidia/cuda:11.7.1-cudnn8-runtime-ubuntu18.04
 
 # 设置维护者信息
 LABEL maintainer="Your Name <your.email@example.com>"
