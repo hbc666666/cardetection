@@ -3,7 +3,7 @@ torchaudio==0.10.0
 torchvision==0.10.0
 pillow==8.4.0
 timm==0.6.12
-thop==0.7.1
+thop==0.7.0
 einops==0.8.0
 dill==0.3.6
 albumentations==1.4.11
