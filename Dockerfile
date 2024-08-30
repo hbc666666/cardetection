@@ -14,6 +14,8 @@ RUN apt-get update && apt-get install -y \
     libxrender-dev \
     && rm -rf /var/lib/apt/lists/*
 
+RUN ln -sf /usr/bin/python3 /usr/bin/python
+
 # 设置工作目录
 WORKDIR /workspace
 
@@ -32,4 +34,4 @@ RUN --mount=type=cache,target=/root/.cache/pip pip3 install -r requirements.txt
 
 
 # 定义容器启动时的默认命令
-CMD ["python3", "run.py", "/input_path", "/output_path"]
+CMD ["python", "run.py", "/input_path", "/output_path"]
